@@ -17,11 +17,11 @@ export default function Home() {
         <Image
           src={profile.image}
           alt={`${profile.name} 프로필 사진`}
-          width={240}
-          height={240}
+          width={256}
+          height={256}
           priority
           unoptimized
-          className="h-28 w-28 rounded-full object-cover shadow-[0_12px_32px_-12px_rgba(120,60,20,0.45)] ring-4 ring-white/90 dark:shadow-[0_12px_32px_-12px_rgba(0,0,0,0.8)] dark:ring-white/10 sm:h-32 sm:w-32"
+          className="h-56 w-56 rounded-full object-cover shadow-[0_12px_32px_-12px_rgba(120,60,20,0.45)] ring-4 ring-white/90 dark:shadow-[0_12px_32px_-12px_rgba(0,0,0,0.8)] dark:ring-white/10 sm:h-64 sm:w-64"
         />
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-stone-900 dark:text-stone-50">{profile.name}</h1>
         <p className="mt-2 text-[15px] text-stone-500 dark:text-stone-400">{profile.bio}</p>
