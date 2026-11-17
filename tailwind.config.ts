@@ -9,8 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        // 따뜻한 배경 톤
+        cream: "#FFF8F1",
+        apricot: "#FCE3D3",
+        ember: { 900: "#1C1613", 800: "#2A201B" },
+      },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", ...defaultTheme.fontFamily.sans],
+        sans: ["Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", ...defaultTheme.fontFamily.sans],
       },
     },
   },

@@ -19,8 +19,13 @@ export default function LinkCard({ link }: { link: LinkItem }) {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      className="block w-full rounded-2xl border-2 border-zinc-800 bg-white px-5 py-4 text-center font-semibold transition hover:-translate-y-0.5 hover:bg-zinc-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-100 dark:hover:text-zinc-900"
+      className="flex w-full items-center justify-center rounded-2xl border border-white/70 bg-white/70 px-6 py-4 text-[15px] font-semibold text-stone-800 shadow-[0_1px_2px_rgba(120,60,20,0.06),0_4px_16px_-8px_rgba(120,60,20,0.18)] backdrop-blur-sm transition duration-200 ease-out hover:bg-white hover:shadow-[0_1px_2px_rgba(120,60,20,0.06),0_10px_24px_-10px_rgba(120,60,20,0.28)] motion-safe:hover:-translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400 dark:border-white/5 dark:bg-white/5 dark:text-stone-100 dark:shadow-none dark:hover:bg-white/10"
     >
+      {link.emoji && (
+        <span aria-hidden="true" className="mr-2.5 text-lg leading-none">
+          {link.emoji}
+        </span>
+      )}
       {link.title}
     </a>
   );
